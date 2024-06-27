@@ -45,6 +45,26 @@ public class Main {
                 System.out.println(year + " год не является високосным");
         }
 
+        //Задание 3. Вариант 2
+        System.out.println("Задание 3. Вариант 2");
+        int year2 = 2024;
+        if (year2 >=1584 && year2 % 400 == 0) {
+            System.out.println(year + " год является високосным");
+        } else if (year2 % 100 !=0 && year2 % 4 == 0) {
+            System.out.println(year2 + " год является високосным");
+        } else
+            System.out.println(year2 + " год не является високосным");
+
+
+        //Задание 3. Вариант 3
+        System.out.println("Задание 3. Вариант 3");
+        int year3 = 1200;
+        if ((year3 >=1584 && year3 % 400 == 0) || (year3 % 100 !=0 && year3 % 4 == 0)) {
+            System.out.println(year3 + " год является високосным");
+        } else
+            System.out.println(year3 + " год не является високосным");
+
+
 
         //Задание 4
         System.out.println("Задание 4");
@@ -58,6 +78,38 @@ public class Main {
             System.out.println("Потребуется дней: " + day2);
         } else if (deliveryDistance <= 100) {
             System.out.println("Потребуется дней: " + day3);
+        } else
+            System.out.println("Доставки нет");
+
+
+        //Задание 4. Вариант 2
+        System.out.println("Задание 4. Вариант 2");
+        int deliveryDistance2 = 95;
+        int dayOne = 1;
+        int dayTwo = dayOne + 1;
+        int dayThree = dayTwo + 1;
+        if (deliveryDistance2 <= 20) {
+            System.out.println("Потребуется дней: " + dayOne);
+        } else if (deliveryDistance2 <= 60) {
+            System.out.println("Потребуется дней: " + dayTwo);
+        } else if (deliveryDistance2 <= 100) {
+            System.out.println("Потребуется дней: " + dayThree);
+        } else
+            System.out.println("Доставки нет");
+
+
+        //Задание 4. Вариант 3
+        System.out.println("Задание 4. Вариант 3");
+        int deliveryDistance3 = 95;
+        int day01 = 1;
+        int day02 = day01 + 1;
+        int day03 = day02 + 1;
+        if (deliveryDistance3 <= 20) {
+            System.out.println("Потребуется дней: " + day01);
+        } else if (deliveryDistance > 20 && deliveryDistance3 <= 60) {
+            System.out.println("Потребуется дней: " + day02);
+        } else if (deliveryDistance > 60 && deliveryDistance3 <= 100) {
+            System.out.println("Потребуется дней: " + day03);
         } else
             System.out.println("Доставки нет");
 
